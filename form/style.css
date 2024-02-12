@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+/*### Primary
+
+- Green: hsl(75, 94%, 57%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: 
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%)
+*/
+body{
+ background: hsl(0, 0%, 8%);
+ height: 100vh;
+ display: flex;
+ align-items: center;
+}
+
+.container-form{
+    background: hsl(0, 0%, 12%);
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.container-form .caption > h2{
+    color: white;
+    text-align: center;
+    margin-top: 6px;
+}
+.container-form .caption > h4{
+    color: hsl(105, 71%, 50%);
+    text-align: center;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.container-form .caption > p{
+    color: white;
+    margin-top: 8px;
+    font-size: 14px;
+}
+.btn-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 30px;
+    cursor: pointer;
+    background: hsl(0, 0%, 20%);
+    border: none;
+}
+.btn:last-child{
+    margin-bottom: 10px;
+}
+.btn:hover{
+    background: hsl(75, 94%, 57%);
+}
+
+img{
+    height: 80px;
+    border-radius: 50px;
+}
