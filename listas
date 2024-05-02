@@ -1,0 +1,9 @@
+listas: una sucesion finita de cero, de uno o mas elementos 
+del mismmo tipo.
+
+variable = ["cada elemento tiene un indice", "indice 1", "indice n"]
+para imprimir el indice de una lista 
+print(" ", variable[0]")
+
+variable_lista.append("tipo de valor donde ingresar el elemento nuevo")
+
