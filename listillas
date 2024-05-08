@@ -1,0 +1,36 @@
+listas: una sucesion finita de cero, de uno o mas elementos 
+del mismmo tipo.
+
+variable = ["cada elemento tiene un indice", "indice 1", "indice n"]
+para imprimir el indice de una lista 
+print(" ", variable[0]")
+
+variable_lista.append("tipo de valor donde ingresar el elemento nuevo") aca puedo usar un input, para que el usuario ingrese un nuevo elemento, variable_lista.append(input("escribe un nuevo elemento")
+
+print(len(variable_lista)) cuenta los elementos de la lista
+
+como eliminar elementos de una lista
+#pop lista.pop(1) 
+lista = ["HOLA", "A", "TODOS"]
+for x in range (len(lista) -1,-1,-1): el primer -1 es donde va a comenzar el contador del bucle, con el segundo numero le decimos que vaya hasta -1, y con el tercer -1 le decimos que vaya restando uno
+ if lista[x] == "a"
+   print(lista.pop(x)) 
+
+otro metodo
+del lista[1] // [0:7]
+
+remove 
+for x in lista
+ if x == "a";
+  lista.remove(X)
+print (lista2)
+
+como modificar un elemento de una lista en python
+for x in range(len(lista2)):
+ if lista[x] == "hola":
+    lista[x] = "adios"
+
+print (lista)
+
+
+****cifrado de cesar****
