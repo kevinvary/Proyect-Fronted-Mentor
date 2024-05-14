@@ -1,0 +1,25 @@
+#Escribir un programa que almacene las asignaturas de un curso
+# (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista, 
+# pregunte al usuario la nota que ha sacado en cada asignatura y elimine de la lista las asignaturas aprobadas. 
+# Al final el programa debe mostrar por pantalla las asignaturas que el usuario tiene que repetir.
+
+
+
+materiasnum = int(input("Ingrese la cantidad de materias que tiene: "))
+materias = [ ]
+calificaciones = [ ]
+
+
+
+
+for i in range(materiasnum):
+    materias.append(input("Ingrese las materias: "))
+
+
+for m in materias:
+    nota = float(input("Ingrese la nota de " + m + ": "))
+    calificaciones.append(nota)
+    if nota >= 60:
+        print("Has aprobado: "  + m)
+    else:
+        print("Tienes que repetir: " + m)
