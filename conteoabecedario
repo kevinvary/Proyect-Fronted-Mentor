@@ -1,0 +1,9 @@
+
+
+abecedario = [chr(i) for i in range(ord("a"), ord("z")+1)]
+abecedarioMultiplos = [ ]
+for i in range(len(abecedario)):
+    if (i+1) % 3 == 0:
+        abecedarioMultiplos.append(abecedario[i]) # Agregar la letra correspondiente, no el índice
+
+print(abecedarioMultiplos)
