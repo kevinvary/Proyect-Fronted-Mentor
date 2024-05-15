@@ -1,0 +1,30 @@
+# Suma de números pares e impares: Escribe un programa que solicite al usuario un número entero positivo y luego sume todos los números pares e impares desde 1 hasta ese 
+# número por separado. Luego muestra las sumas por separado.
+
+
+
+numbersPares = [ ]
+numbersImpars = [ ]
+sumaI  = 0
+sumaP = 0
+numeroIng = int(input("Dame una cantidad de numeros a calcular: "))
+
+while numeroIng <= 0:
+    print("Ingresaste un numero menor a 1")
+    numeroIng = int(input("Dame una cantidad de numeros a calcular: "))
+    
+
+for i in range(1, numeroIng + 1):
+        if i % 2 == 0:
+            sumaP += i
+            numbersPares.append(i)
+        else: 
+            if i % 2 != 0:
+                sumaI += i
+                numbersImpars.append(i)
+                
+
+#print(numbersPares) 
+#print(numberImpars)
+print("La suma de todos estos numeros pares ", numbersPares, "es ", sumaP)
+print("La suma de todos estos numeros impares ", numbersImpars, "es ", sumaI)
