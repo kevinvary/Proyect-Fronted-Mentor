@@ -1,0 +1,86 @@
+import random
+
+
+
+numeroDeRondas = int(input("Ingrese la cantidad de rondas: "))
+numeroDeTiradas = int(input("Ingrese el numero de tiradas por jugador: "))
+
+
+
+
+def tirar_dados(numeroDeTiradas):
+    suma = 0
+    for _ in range(numeroDeTiradas):
+        dado = random.randint(1, 6)
+        if dado % 2 != 0:
+            suma += dado
+    return suma
+tirar_dados(numeroDeTiradas)
+
+
+def rondas(numeroDeRondas):
+    ronda = 0
+    for j in range(numeroDeRondas):
+        ronda += j
+    return ronda
+rondas(numeroDeRondas)
+
+
+
+
+'''
+def jugar(eldibu):
+    while numeroDeRondas == rondas:
+        for l in range(numeroDeTiradas):
+            jugador1 = tirar_dados(numeroDeTiradas)
+            jugador2 = tirar_dados(numeroDeTiradas)
+            jugador3 = tirar_dados(numeroDeTiradas)
+        if jugador1 > jugador2 and jugador1 and jugador3:
+            print("El ganador es jugador 1")
+        elif jugador2 > jugador3 and jugador2 > jugador3:
+            print("El ganador es el jugador 2")
+        elif jugador3 > jugador2 and jugador3 and jugador1:
+            print("El ganador es el jugador 3")
+        else:
+            print("Hay empate")
+jugar()
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+#if jugador1 > jugador2 and jugador1 > jugador3:
+#    print("El ganador es el jugador 1")
+#elif jugador2 > jugador1 and jugador2 > jugador3:
+ #   print("El ganador es el jugador 2")
+#elif jugador3 > jugador1 and jugador3 > jugador2:
+  #  print("El ganador es el jugador 3")
+#else:
+#    print("Hay un empate")
+
+
+
+
+
+
+
+
+
+#print("Los puntos del jugador 1 son:", jugador1)
+#print("Los puntos del jugador 2 son:", jugador2)
+#print("Los puntos del jugador 3 son:", jugador3)
